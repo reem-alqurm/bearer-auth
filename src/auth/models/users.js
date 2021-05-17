@@ -14,9 +14,9 @@ const users = new mongoose.Schema({
 // So, on every user object ... this.token is now readable!
 users.virtual('token').get(function () {
   let tokenObject = {
-    username: this.username,
+    username: this.username, 
   }
-  return jwt.sign(tokenObject, process.env.SECRET);
+  return jwt.sign(tokenObject, process.env.SECRET, { expiresIn: '1m' });
 });
 
 users.pre('save', async function () {
