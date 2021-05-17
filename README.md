@@ -1,6 +1,5 @@
 # Heroku :
-[Herouko](https://reem-api-server.herokuapp.com/food)
-[Herouko](https://reem-api-server.herokuapp.com/clothes)
+[Herouko](https://reem-bearer-auth.herokuapp.com/)
 
 # Github :
 [Github](https://github.com/reem-alqurm/bearer-auth)
